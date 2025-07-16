@@ -8,11 +8,17 @@
   flex-direction: column;   
   justify-content: flex-end; 
   align-items: center;      
-
+  @include media(desktop) {
+    background-image: url('../img/desktop/hero-bg-desktop.png');
+    align-items: flex-start;
+  }
 }
 
 .home-gp-btn {
   width: 243px;
   height: 70px;
   margin-bottom: 80px;
+  @include media(desktop) {
+    margin-left: 200px;
+  }
 }

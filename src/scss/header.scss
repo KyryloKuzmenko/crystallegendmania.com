@@ -17,6 +17,9 @@
   margin-left: auto;
   margin-top: 48px;
   margin-right: 20px;
+  @include media(desktop) {
+    display: none;
+  }
 }
 
 .backdrop {
@@ -63,8 +66,18 @@
   top: 48px;
 }
 
-.backdrop-link {
+.backdrop-link,
+.header-link {
   font-weight: 700;
   font-size: 16px;
   color: #a9f5fb;
+}
+
+.header-list {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+  }
 }
