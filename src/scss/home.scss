@@ -1,0 +1,18 @@
+.home-section .home-content-wrap {
+  background-image: url('../img/mobile/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;   
+  justify-content: flex-end; 
+  align-items: center;      
+
+}
+
+.home-gp-btn {
+  width: 243px;
+  height: 70px;
+  margin-bottom: 80px;
+}

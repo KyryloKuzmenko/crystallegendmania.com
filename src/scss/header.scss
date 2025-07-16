@@ -1,7 +1,27 @@
+.header-section {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.header-section .header-content-wrap {
+  background: transparent;
+  @include media(desktop) {
+  }
+}
+
+.burger-menu {
+  width: 48px;
+  height: 48px;
+  margin-left: auto;
+  margin-top: 48px;
+  margin-right: 20px;
+}
 
 .backdrop {
   position: fixed;
-  top: 75px;
+  top: 0;
   left: 0;
   right: 0;
   height: 100%;
@@ -17,4 +37,34 @@
   visibility: visible;
   display: flex;
   justify-content: center;
+}
+
+.backdrop-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 34px;
+}
+
+.hidden {
+  display: none;
+}
+
+.burger-menu.hidden,
+.close-menu.hidden {
+  display: none;
+}
+
+.close-menu {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 38px;
+  top: 48px;
+}
+
+.backdrop-link {
+  font-weight: 700;
+  font-size: 16px;
+  color: #a9f5fb;
 }
