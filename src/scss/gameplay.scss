@@ -1,0 +1,72 @@
+.gameplay-content-wrap {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 80px;
+  @include media(desktop) {
+    padding-bottom: 150px;
+  }
+}
+
+.gameplay-content {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    gap: 20px;
+  }
+}
+
+.gameplay-details {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.gameplay-screenshot {
+  margin-top: 28px;
+}
+
+.gameplay-details {
+  margin-top: 22px;
+}
+
+.gameplay-desc {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #a9f5fb;
+  @include media(desktop) {
+    text-align: left;
+    line-height: 1.5;
+    width: 413px;
+  }
+}
+
+.gameplay-screenshot {
+  @include media(desktop) {
+    width: 630px;
+    height: 388px;
+  }
+}
+
+.gameplay-desc-highlight {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #a9f5fb;
+}
+
+.gameplay-link {
+  width: 243px;
+  height: 70px;
+  margin-top: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media(desktop) {
+    margin: 0;
+    margin-top: 36px;
+  }
+}
